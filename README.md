@@ -14,6 +14,11 @@ Airbnb-Firefly is a clone of the popular Airbnb application, built using modern 
 - React Hook Form (forms)
 - Yarn (package manager)
 
+## enviromment variables
+
+- DATABASE_URL
+- NEXTAUTH_SECRET
+
 ## Installation and Setup
 
 1. Clone the repository:
