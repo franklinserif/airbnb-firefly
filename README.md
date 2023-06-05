@@ -4,6 +4,7 @@ Airbnb-Firefly is a clone of the popular Airbnb application, built using modern 
 
 ## Technologies used
 
+- node >=16.8.0
 - Next.js 13
 - TypeScript
 - Tailwind CSS
