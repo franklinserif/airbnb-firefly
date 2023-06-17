@@ -4,7 +4,7 @@ import { FC, useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { AiFillGithub } from "react-icons/ai";
-import { FcGoogle } from "react-icons/Fc";
+import { BsGoogle } from "react-icons/bs";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -83,7 +83,7 @@ const LoginModal: FC = () => {
       <Button
         outline
         label="Continue with Google"
-        icon={FcGoogle}
+        icon={BsGoogle}
         onClick={() => {
           signIn("google");
         }}
