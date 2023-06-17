@@ -3,6 +3,7 @@ import EmptyState from "../components/EmptyState";
 import PropertiesClient from "./PropertiesClient";
 import getCurrentUser from "../actions/getCurrentUser";
 import getListings from "../actions/getListings";
+import ClientOnly from "../components/ClientOnly";
 
 const PropertiesPage = async () => {
   const currentUser = await getCurrentUser();
@@ -29,9 +30,9 @@ const PropertiesPage = async () => {
   }
 
   return (
-    <div>
+    <ClientOnly>
       <PropertiesClient listings={listings} currentUser={currentUser} />
-    </div>
+    </ClientOnly>
   );
 };
 

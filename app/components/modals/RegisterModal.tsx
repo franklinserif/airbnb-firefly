@@ -3,7 +3,7 @@
 import { FC, useCallback, useState } from "react";
 import axios from "axios";
 import { AiFillGithub } from "react-icons/ai";
-import { BsGoogle } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -88,7 +88,7 @@ const RegisterModal: FC = () => {
       <Button
         outline
         label="Continue with Google"
-        icon={BsGoogle}
+        icon={FcGoogle}
         onClick={() => {
           signIn("google");
         }}
